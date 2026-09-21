@@ -312,10 +312,10 @@ footer{padding:28px 0;font-size:.85rem;color:var(--ink-soft);text-align:center}
         <div><h3 data-t="u2_t"></h3><p data-t="u2_d"></p></div>
         <a class="btn btn-cta btn-sm" href="#unit2" data-t="u1_btn"></a>
       </div>
-      <div class="unit soon">
+      <div class="unit">
         <div class="g" aria-hidden="true">한</div>
         <div><h3 data-t="u3_t"></h3><p data-t="u3_d"></p></div>
-        <span class="status" data-t="soon"></span>
+        <a class="btn btn-cta btn-sm" href="#unit3" data-t="u1_btn"></a>
       </div>
     </div>
   </div>
@@ -405,6 +405,50 @@ footer{padding:28px 0;font-size:.85rem;color:var(--ink-soft);text-align:center}
     <div class="sub">
       <h3 data-t="q_title"></h3>
       <div class="quiz" id="quiz2"></div>
+    </div>
+  </div>
+</section>
+
+<section id="unit3">
+  <div class="wrap">
+    <div class="sec-head"><h2 data-t="l3_title"></h2><p data-t="l3_intro"></p></div>
+
+    <div class="lesson">
+      <div class="vowel-view">
+        <div class="cell"><span class="glyph" id="bglyph" aria-hidden="true">ㄱ</span></div>
+        <div class="readout" aria-live="polite">
+          <div class="formula" id="bformula">악 = ㅇ + ㅏ + ㄱ</div>
+          <div class="sound">
+            <span><span data-t="l1_sounds"></span> <strong id="broman">k</strong></span>
+            <button type="button" class="listen" id="blisten" hidden data-t="b_listen"></button>
+          </div>
+          <p class="vowel-desc" id="bdesc"></p>
+        </div>
+      </div>
+
+      <div>
+        <div class="vgroup" role="group" aria-labelledby="bl-group1">
+          <span class="label" id="bl-group1" data-t="l3_group1"></span>
+          <div class="chips" id="bg-group1"></div>
+        </div>
+        <div class="vgroup" role="group" aria-labelledby="bl-group2">
+          <span class="label" id="bl-group2" data-t="l3_group2"></span>
+          <div class="chips" id="bg-group2"></div>
+        </div>
+        <p class="tip" data-t="l3_tip"></p>
+        <p class="note" style="margin-top:16px" data-t="l3_note"></p>
+      </div>
+    </div>
+
+    <div class="sub">
+      <h3 data-t="w3_title"></h3>
+      <p data-t="w3_sub"></p>
+      <div class="words" id="words3"></div>
+    </div>
+
+    <div class="sub">
+      <h3 data-t="q_title"></h3>
+      <div class="quiz" id="quiz3"></div>
     </div>
   </div>
 </section>
@@ -554,6 +598,15 @@ const T = {
     w2_title: 'Read more words', w2_sub: 'These words use only open syllables (no batchim yet) with the vowels and consonants you know. Tap a word to check it.',
     qz_c1: 'Which consonant makes the sound “{s}”?', qz_c2: 'What sound does this consonant make?',
     qz_c_r_low: 'Look over the consonants above, then try again.',
+    l3_title: 'Unit 3: Batchim and Reading',
+    l3_intro: 'A batchim is a consonant written under a syllable block, after the vowel. Whatever letter is written there, it is actually pronounced as one of just seven sounds. Tap a batchim to hear which of the seven it belongs to.',
+    l3_group1: 'ㄴㄹㅁㅇ — sounds you can hold',
+    l3_group2: 'ㄱㄷㅂ — sounds that stop short',
+    l3_tip: 'Many other final consonants borrow these same seven sounds. For example 낫, 낮, and 낯 are spelled with ㅅ, ㅈ, and ㅊ, but all end in the same “t”-like sound.',
+    l3_note: 'The English comparisons above only approximate unreleased and nasal sounds that don’t work quite the same way in English. Listen closely, and check with a native speaker when you can.',
+    w3_title: 'Read words with batchim', w3_sub: 'Each word below ends in one of the seven batchim sounds. Tap a word to check it.',
+    qz_b1: 'Which batchim makes the sound “{s}”?', qz_b2: 'What sound does this batchim make?',
+    qz_b_r_low: 'Look over the batchim above, then try again.',
     mo_title: 'More to learn', mo_sub: 'Materials for going beyond the free units are in preparation. Send me a message and I will let you know when they are ready.',
     mo_soon: 'In preparation', mo_ebook: 'Ebook', mo_video: 'Video series', mo_notify: 'Notify me',
     e1_t: 'Hangul Starter', e1_d: 'Learn to read and write Hangul: vowels, consonants, final consonants, and reading practice.',
@@ -616,6 +669,15 @@ const T = {
     w2_title: '단어 더 읽어보기', w2_sub: '받침 없이, 지금까지 배운 모음과 자음만으로 만든 단어예요. 단어를 눌러 확인해 보세요.',
     qz_c1: '“{s}” 소리가 나는 자음은 무엇일까요?', qz_c2: '이 자음은 어떤 소리가 날까요?',
     qz_c_r_low: '위의 자음을 다시 살펴본 뒤 한 번 더 도전해 보세요.',
+    l3_title: '3단원: 받침과 읽기',
+    l3_intro: '받침은 음절 블록의 맨 아래, 모음 뒤에 쓰는 자음이에요. 어떤 자음을 쓰든 받침은 실제로 일곱 가지 소리 중 하나로만 발음돼요. 받침을 눌러 일곱 소리 중 무엇에 해당하는지 확인해 보세요.',
+    l3_group1: 'ㄴㄹㅁㅇ — 길게 끌 수 있는 소리',
+    l3_group2: 'ㄱㄷㅂ — 짧게 끊기는 소리',
+    l3_tip: '다른 받침 글자들도 이 일곱 소리를 그대로 빌려 써요. 예를 들어 낫, 낮, 낯은 받침 글자(ㅅ, ㅈ, ㅊ)가 다 다르지만 모두 비슷한 “ㄷ” 소리로 끝나요.',
+    l3_note: '위 영어 비교는 영어와 정확히 같지 않은 불파음·비음을 대략적으로 설명한 것입니다. 주의 깊게 듣고, 가능하면 원어민에게 확인해 보세요.',
+    w3_title: '받침이 있는 단어 읽기', w3_sub: '아래 단어는 모두 일곱 가지 받침 소리 중 하나로 끝나요. 단어를 눌러 확인해 보세요.',
+    qz_b1: '“{s}” 소리가 나는 받침은 무엇일까요?', qz_b2: '이 받침은 어떤 소리가 날까요?',
+    qz_b_r_low: '위의 받침을 다시 살펴본 뒤 한 번 더 도전해 보세요.',
     mo_title: '더 배우기', mo_sub: '무료 단원 너머를 위한 자료를 준비하고 있습니다. 메시지를 보내 주시면 준비되었을 때 알려 드릴게요.',
     mo_soon: '준비 중', mo_ebook: '전자책', mo_video: '영상 시리즈', mo_notify: '출시 알림 받기',
     e1_t: '한글 스타터', e1_d: '모음, 자음, 받침을 익히고 읽기 연습까지 하며 한글을 읽고 쓰게 됩니다.',
@@ -700,6 +762,24 @@ var CONSONANT_WORDS = [
   { h:'고기', r:'gogi',  m:'meat' },
   { h:'허리', r:'heori', m:'waist' }
 ];
+var BATCHIM = [
+  { f:'ㄱ', r:'k',  syl:'악', group:'stop', en:'An unreleased “k” — start to say the “k” in “sky”, but stop before any air bursts out.', ko:'불파음 k예요. sky의 k를 시작하듯 하되, 숨을 터뜨리지 않고 멈춰요.' },
+  { f:'ㄴ', r:'n',  syl:'안', group:'hold', en:'Like the final “n” in “sun” — the tongue tip stays touching the ridge behind your teeth.', ko:'영어 sun 끝의 n처럼, 혀끝이 윗잇몸에 붙은 채로 끝나요.' },
+  { f:'ㄷ', r:'t',  syl:'앋', group:'stop', en:'An unreleased “t” — like the “t” in “cat” without the final puff of air. (ㅅ, ㅆ, ㅈ, ㅊ, ㅌ, ㅎ also sound like this as batchim.)', ko:'불파음 t예요. cat의 t에서 숨을 터뜨리지 않고 멈추는 느낌이에요. (받침 ㅅ, ㅆ, ㅈ, ㅊ, ㅌ, ㅎ도 이 소리로 나요.)' },
+  { f:'ㄹ', r:'l',  syl:'알', group:'hold', en:'Like the “l” in “feel” — the tongue tip touches the ridge and stays there, unlike the tapped ㄹ at the start of a syllable.', ko:'영어 feel의 l처럼, 혀끝이 잇몸에 붙은 채로 끝나요. 첫소리 ㄹ처럼 한 번 톡 치지 않아요.' },
+  { f:'ㅁ', r:'m',  syl:'암', group:'hold', en:'Like the final “m” in “sum” — the lips stay closed.', ko:'영어 sum 끝의 m처럼, 입술을 다문 채로 끝나요.' },
+  { f:'ㅂ', r:'p',  syl:'압', group:'stop', en:'An unreleased “p” — like the “p” in “stop” without the final puff of air. (ㅍ also sounds like this as batchim.)', ko:'불파음 p예요. stop의 p에서 숨을 터뜨리지 않고 멈추는 느낌이에요. (받침 ㅍ도 이 소리로 나요.)' },
+  { f:'ㅇ', r:'ng', syl:'앙', group:'hold', en:'Like the “ng” in “sing” — air flows out through the nose while the tongue stays raised at the back.', ko:'영어 sing의 ng처럼, 혀 뒤쪽을 든 채로 코로 숨이 빠져나가요.' }
+];
+var BATCHIM_WORDS = [
+  { h:'책', r:'chaek', m:'book' },
+  { h:'눈', r:'nun',   m:'snow / eye' },
+  { h:'곧', r:'got',   m:'soon' },
+  { h:'물', r:'mul',   m:'water' },
+  { h:'밤', r:'bam',   m:'night / chestnut' },
+  { h:'밥', r:'bap',   m:'rice / meal' },
+  { h:'강', r:'gang',  m:'river' }
+];
 
 /* ---------- Language ---------- */
 var lang = 'en';
@@ -728,6 +808,8 @@ function applyLang(l){
   renderQuiz(false);
   renderConsonant();
   renderQuiz2(false);
+  renderBatchim();
+  renderQuiz3(false);
 }
 document.querySelectorAll('[data-lang]').forEach(function(b){
   b.addEventListener('click', function(){ applyLang(b.dataset.lang); });
@@ -1060,6 +1142,125 @@ function renderQuiz2(focusNext){
   }
 }
 
+/* ---------- Unit 3: batchim explorer ---------- */
+var sel3 = 0;
+var bglyph = document.getElementById('bglyph');
+function renderBatchim(pop){
+  var b = BATCHIM[sel3];
+  bglyph.textContent = b.f;
+  document.getElementById('bformula').textContent = b.syl + ' = ㅇ + ㅏ + ' + b.f;
+  document.getElementById('broman').textContent = b.r;
+  document.getElementById('bdesc').textContent = b[lang];
+  if (pop){
+    bglyph.classList.remove('pop');
+    void bglyph.offsetWidth;
+    bglyph.classList.add('pop');
+  }
+}
+function buildBatchim(){
+  BATCHIM.forEach(function(b, idx){
+    var btn = el('button', 'chip vchip', b.f);
+    btn.type = 'button';
+    btn.dataset.idx = idx;
+    btn.setAttribute('aria-pressed', idx === sel3);
+    btn.addEventListener('click', function(){
+      sel3 = idx;
+      document.querySelectorAll('#bg-group1 .vchip, #bg-group2 .vchip').forEach(function(x){ x.setAttribute('aria-pressed', +x.dataset.idx === idx); });
+      renderBatchim(true);
+    });
+    document.getElementById(b.group === 'hold' ? 'bg-group1' : 'bg-group2').appendChild(btn);
+  });
+}
+buildBatchim();
+document.getElementById('blisten').addEventListener('click', function(){ speak(BATCHIM[sel3].syl); });
+
+/* ---------- Unit 3: reading words ---------- */
+(function(){
+  var box = document.getElementById('words3');
+  BATCHIM_WORDS.forEach(function(w){
+    var b = el('button', 'word');
+    b.type = 'button';
+    b.setAttribute('aria-expanded', 'false');
+    b.appendChild(el('span', 'h', w.h));
+    b.appendChild(el('span', 'm', w.r + ' · ' + w.m));
+    b.addEventListener('click', function(){
+      b.setAttribute('aria-expanded', b.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
+    });
+    box.appendChild(b);
+  });
+})();
+
+/* ---------- Unit 3: quiz ---------- */
+var quiz3 = null;
+function startQuiz3(){
+  var pool = shuffle(BATCHIM.slice()).slice(0, 5);
+  quiz3 = {
+    idx: 0, score: 0, picked: null, done: false,
+    qs: pool.map(function(b){
+      var others = shuffle(BATCHIM.filter(function(x){ return x !== b; })).slice(0, 3);
+      return { v: b, type: Math.random() < 0.5 ? 'sound' : 'letter', opts: shuffle([b].concat(others)) };
+    })
+  };
+  renderQuiz3(false);
+}
+function renderQuiz3(focusNext){
+  if (!quiz3) return;
+  var box = document.getElementById('quiz3');
+  var t = T[lang];
+  box.textContent = '';
+  if (quiz3.done){
+    box.appendChild(el('p', 'qz-result', fill(t.qz_result, { n: quiz3.score, t: quiz3.qs.length })));
+    box.appendChild(el('p', 'qz-sub', quiz3.score === quiz3.qs.length ? t.qz_r_high : t.qz_b_r_low));
+    var again = el('button', 'btn btn-line btn-sm', t.qz_again);
+    again.type = 'button';
+    again.addEventListener('click', startQuiz3);
+    box.appendChild(again);
+    return;
+  }
+  var q = quiz3.qs[quiz3.idx];
+  box.appendChild(el('p', 'qz-progress', fill(t.qz_q, { n: quiz3.idx + 1, t: quiz3.qs.length })));
+  if (q.type === 'sound'){
+    box.appendChild(el('p', 'qz-prompt', fill(t.qz_b1, { s: q.v.r })));
+  } else {
+    box.appendChild(el('p', 'qz-prompt', t.qz_b2));
+    box.appendChild(el('div', 'qz-glyph', q.v.f));
+  }
+  var grid = el('div', 'qz-opts');
+  q.opts.forEach(function(o){
+    var b = el('button', 'opt' + (q.type === 'sound' ? ' opt-glyph' : ''), q.type === 'sound' ? o.f : o.r);
+    b.type = 'button';
+    if (quiz3.picked){
+      if (o === q.v) b.classList.add('ok');
+      else if (o === quiz3.picked) b.classList.add('bad');
+    }
+    b.addEventListener('click', function(){
+      if (quiz3.picked) return;
+      quiz3.picked = o;
+      if (o === q.v) quiz3.score++;
+      renderQuiz3(true);
+    });
+    grid.appendChild(b);
+  });
+  box.appendChild(grid);
+  var fb = el('p', 'qz-feedback');
+  fb.setAttribute('role', 'status');
+  if (quiz3.picked){
+    fb.textContent = quiz3.picked === q.v ? t.qz_ok : fill(t.qz_no, { v: q.v.f, s: q.v.r });
+  }
+  box.appendChild(fb);
+  if (quiz3.picked){
+    var last = quiz3.idx === quiz3.qs.length - 1;
+    var nx = el('button', 'btn btn-cta btn-sm', last ? t.qz_finish : t.qz_next);
+    nx.type = 'button';
+    nx.addEventListener('click', function(){
+      if (last) { quiz3.done = true; } else { quiz3.idx++; quiz3.picked = null; }
+      renderQuiz3(false);
+    });
+    box.appendChild(nx);
+    if (focusNext) nx.focus();
+  }
+}
+
 /* ---------- Init ---------- */
 var start = 'en';
 try {
@@ -1069,6 +1270,7 @@ try {
 } catch(e) {}
 startQuiz();
 startQuiz2();
+startQuiz3();
 applyLang(start);
 render(false);
 </script>
